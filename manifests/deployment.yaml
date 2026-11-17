@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
         - name: repo2
-          image: 8089278330/repo2:latest
+            image: 8089278330/repo2:2
           imagePullPolicy: Always
 
           ports:
