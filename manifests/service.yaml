@@ -1,0 +1,21 @@
+
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: repo2-service
+  namespace: production
+  labels:
+    app: repo2
+
+spec:
+  selector:
+    app: repo2
+
+  type: ClusterIP
+
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
